@@ -850,6 +850,12 @@ a:focus .social-icon {
   height: 50px;
   padding-left: 16px;
   color: var(--color-contact-transp);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    
+.newsletter .newsletter-input:focus {
+  border: 1px solid var(--color-logo);
 }
 
 .newsletter .newsletter-button {
@@ -866,6 +872,11 @@ a:focus .social-icon {
   line-height: 1.875;
   cursor: pointer;
   margin-left: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsletter .newsletter-button:hover {
+  background-color: var(--color-logo-dark);
 }
 
 .newsletter .newsletter-icon {
