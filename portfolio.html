@@ -316,10 +316,18 @@
           </ul>
         </div>
         <div class="newsletter">
-          <h4>Zapisz się do newslettera</h4>
           <form>
-            <input class="newsletter-input" type="email" placeholder="E-mail" />
-            <button class="newsletter-button" type="submit">
+            <label for="join">
+              <h4>Zapisz się do newslettera</h4>
+              <input
+                class="newsletter-input"
+                type="email"
+                placeholder="E-mail"
+                name="join"
+                id="join"
+              />
+            </label>
+            <button type="submit" class="newsletter-button">
               Zapisz się
               <svg class="newsletter-icon" width="17" height="17">
                 <use href="./images/icons.svg#icon-send"></use>

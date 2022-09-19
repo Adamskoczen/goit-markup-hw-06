@@ -23,33 +23,33 @@
         <button class="modal-close" type="button" data-modal-close>x</button>
         <form name="modal" class="form-modal">
           <h4>Zostaw swoje dane w formularzu poniżej</h4>
-          <label name="name">
+          <label for="username">
             <p>Imie</p>
             <svg class="icon-form" width="15" height="15">
               <use href="./images/icons.svg#person-black-18dp"></use>
             </svg>
-            <input class="input-text" type="text" />
+            <input class="input-text" type="text" name="username" id="username" />
           </label>
-          <label name="tel">
+          <label for="tel">
             <p>Telefon</p>
             <svg class="icon-form" width="15" height="15">
               <use href="./images/icons.svg#phone-black-18dp"></use>
             </svg>
-            <input class="input-text" type="tel" />
+            <input class="input-text" type="tel" name="tel" id="tel" />
           </label>
-          <label name="email">
+          <label for="email">
             <p>Email</p>
             <svg class="icon-form" width="15" height="15">
               <use href="./images/icons.svg#email-black-18dp"></use>
             </svg>
-            <input class="input-text" type="email" />
+            <input class="input-text" type="email" name="email" id="email" />
           </label>
-          <label name="textarea">
+          <label for="comment">
             <p>Komentarz</p>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Wprowadź tekst"></textarea>
+            <textarea placeholder="Wprowadź tekst" name="comment" id="comment"></textarea>
           </label>
-          <label name="regulations">
-            <input class="input-checkbox" type="checkbox" />
+          <label for="regulations">
+            <input class="input-checkbox hidden" type="checkbox" name="regulations" id="regulations" />
             <p class="regulations-check">
               Oświadczam iż akceptuję <a>Regulamin</a> i <a>Politykę Prywatności.</a>
             </p>
@@ -537,14 +537,24 @@
           </ul>
         </div>
         <div class="newsletter">
-          <h4>Zapisz się do newslettera</h4>
-          <input class="newsletter-input" type="email" placeholder="E-mail" />
-          <button class="newsletter-button">
-            Zapisz się
-            <svg class="newsletter-icon" width="17" height="17">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+          <form>
+            <label for="join">
+              <h4>Zapisz się do newslettera</h4>
+              <input
+                class="newsletter-input"
+                type="email"
+                placeholder="E-mail"
+                name="join"
+                id="join"
+              />
+            </label>
+            <button type="submit" class="newsletter-button">
+              Zapisz się
+              <svg class="newsletter-icon" width="17" height="17">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
