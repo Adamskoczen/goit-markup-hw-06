@@ -20,66 +20,79 @@
   <body>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close" type="button" data-modal-close>x</button>
-        <form name="modal" class="form-modal">
-          <h4>Zostaw swoje dane w formularzu poniżej</h4>
-          <label for="username">
-            <p>Imie</p>
-            <svg class="icon-form" width="15" height="15">
+        <button class="modal__btn-close" type="button" data-modal-close>x</button>
+        <form class="modal__form" name="modal">
+          <h4 class="modal__title">Zostaw swoje dane w formularzu poniżej</h4>
+          <label class="modal__label" for="username">
+            <p class="modal__name">Imie</p>
+            <svg class="modal__icon" width="15" height="15">
               <use href="./images/icons.svg#person-black-18dp"></use>
             </svg>
-            <input class="input-text" type="text" name="username" id="username" />
+            <input class="modal__input" type="text" name="username" id="username" />
           </label>
-          <label for="tel">
-            <p>Telefon</p>
-            <svg class="icon-form" width="15" height="15">
+          <label class="modal__label" for="tel">
+            <p class="modal__tel">Telefon</p>
+            <svg class="modal__icon" width="15" height="15">
               <use href="./images/icons.svg#phone-black-18dp"></use>
             </svg>
-            <input class="input-text" type="tel" name="tel" id="tel" />
+            <input class="modal__input" type="tel" name="tel" id="tel" />
           </label>
-          <label for="email">
-            <p>Email</p>
-            <svg class="icon-form" width="15" height="15">
+          <label class="modal__label" for="email">
+            <p class="modal__email">Email</p>
+            <svg class="modal__icon" width="15" height="15">
               <use href="./images/icons.svg#email-black-18dp"></use>
             </svg>
-            <input class="input-text" type="email" name="email" id="email" />
+            <input class="modal__input" type="email" name="email" id="email" />
           </label>
-          <label for="comment">
-            <p>Komentarz</p>
-            <textarea placeholder="Wprowadź tekst" name="comment" id="comment"></textarea>
+          <label class="modal__label" for="comment">
+            <p class="modal__comment">Komentarz</p>
+            <textarea
+              class="modal__textarea"
+              placeholder="Wprowadź tekst"
+              name="comment"
+              id="comment"
+            ></textarea>
           </label>
-          <label for="regulations">
-            <input class="input-checkbox hidden" type="checkbox" name="regulations" id="regulations" />
-            <p class="regulations-check">
-              Oświadczam iż akceptuję <a>Regulamin</a> i <a>Politykę Prywatności.</a>
+          <label class="modal__label" for="regulations">
+            <input
+              class="modal__input-checkbox hidden"
+              type="checkbox"
+              name="regulations"
+              id="regulations"
+            />
+            <p class="modal__check">
+              Oświadczam iż akceptuję <a class="modal__hiperlink">Regulamin</a> i
+              <a class="modal__hiperlink">Politykę Prywatności.</a>
             </p>
           </label>
-          <button class="form-send" type="submit">Wyślij</button>
+          <button class="modal__btn-send" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
     <div class="container-header">
-      <header class="top container">
-        <a class="logo-top" href="index.html"><span>Web</span>Studio</a>
-        <nav>
-          <ul>
-            <li><a class="link active-index" href="index.html">Agencja</a></li>
-            <li><a class="link" href="portfolio.html">Portfolio</a></li>
-            <li><a class="link" href="index.html">Kontakt</a></li>
+      <header class="top-header container">
+        <a class="top-header__logo" href="index.html"><span>Web</span>Studio</a>
+        <nav class="navigation">
+          <ul class="navigation__lists">
+            <li>
+              <a class="navigation__link navigation__link--active" href="index.html">Agencja</a>
+            </li>
+            <li><a class="navigation__link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="navigation__link" href="index.html">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="contacts-top">
+        <ul class="top-header__lists">
           <li>
-            <a class="contact link" href="mailto:info@devstudio.com"
-              ><svg class="icon" width="20" height="20">
+            <a class="top-header__link" href="mailto:info@devstudio.com"
+              ><svg class="top-header__icon" width="20" height="20">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="contact link" href="tel:+48111111111"
-              ><svg class="icon" width="20" height="20">
+            <a class="top-header__link" href="tel:+48111111111"
+              ><svg class="top-header__icon" width="20" height="20">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -469,13 +482,15 @@
       <div class="container">
         <div class="footer-info">
           <a class="logo-bottom" href="index.html"><span>Web</span>Studio</a>
-          <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+          <address class="footer-info__adress">m. Warszawa, Aleje Jerozolimskie 21</address>
           <ul>
             <li>
-              <a class="contact link" href="mailto:info@example.com">info@example.com</a>
+              <a class="footer-info__link contact" href="mailto:info@example.com"
+                >info@example.com</a
+              >
             </li>
             <li>
-              <a class="contact link" href="tel:+48111111111">+48 111 111 111</a>
+              <a class="footer-info__link contact" href="tel:+48111111111">+48 111 111 111</a>
             </li>
           </ul>
         </div>
